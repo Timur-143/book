@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Rubrics</h1>
+{% for elem in rubric %}
+<h1>{{ elem.name }}</h1>
+{% endfor %}
+
+<h1>Products</h1>
+{% for elem in products %}
+<h2>{{ elem.title }}</h2>
+<h2>{{ elem.price }}</h2>
+<h2>{{ elem.rubric }}</h2>
+{% endfor %}
+
+</body>
+</html>
